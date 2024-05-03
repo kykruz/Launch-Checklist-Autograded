@@ -51,6 +51,9 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
         || validateInput(fuelLevel) === 'Empty' || validateInput(cargoLevel) === 'Empty') {
 
         alert('All fields are required!');
+        list.style.visibility = 'hidden';
+        launchStatus.style.color = 'black';
+        launchStatus.innerHTML = 'Awaiting Information Before Launch';
         return
     }
 
@@ -58,6 +61,9 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
         || validateInput(fuelLevel) === 'Not a Number' || validateInput(cargoLevel) === 'Not a Number') {
 
         alert('Make sure to enter valid information for each field!');
+        list.style.visibility = 'hidden';
+        launchStatus.style.color = 'black';
+        launchStatus.innerHTML = 'Awaiting Information Before Launch';
         return
     }
 

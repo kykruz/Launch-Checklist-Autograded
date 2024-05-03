@@ -5,7 +5,7 @@
 // const { addDestinationInfo, pickPlanet } = require("./scriptHelper");
 
 window.addEventListener("load", function () {
-    const missionTarget = document.getElementById('missionTarget');
+  
     let listedPlanets;
     // Set listedPlanetsResponse equal to the value returned by calling myFetch()
     let listedPlanetsResponse = myFetch();
@@ -26,7 +26,7 @@ window.addEventListener("load", function () {
         event.preventDefault()
         let list = document.getElementById('faultyItems');
        
-        let pilotName = document.querySelector('input[name=pilotName]'.value);
+        let pilotName = document.querySelector('input[name=pilotName]').value;
         // let pilotName = pilotInput.value
         let copilotName = document.querySelector('input[name=copilotName]').value;
         let fuelLevel = document.querySelector('input[name=fuelLevel]').value;
